@@ -1,4 +1,4 @@
-import "./navbar.css";
+import "./navbar.scss";
 import SearchOutlineIcon from "@mui/icons-material/SearchOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";

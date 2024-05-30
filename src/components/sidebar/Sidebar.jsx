@@ -1,4 +1,4 @@
-import "./sidebar.css"
+import "./sidebar.scss"
 import DashboardIcon from '@mui/icons-material/Dashboard';
 
 const Sidebar = () => {
