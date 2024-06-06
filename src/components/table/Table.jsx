@@ -81,8 +81,8 @@ const List = () => {
                             <TableCell className="tableCell">{row.id}</TableCell>
                             <TableCell className="tableCell">
                                 <div className="cellWrapper">
-                                <img src={row.img} alt="" className="image" />
-                                {row.product}
+                                    <img src={row.img} alt="" className="image" />
+                                    {row.product}
                                 </div>
                             </TableCell>
                             <TableCell className="tableCell">{row.customer}</TableCell>

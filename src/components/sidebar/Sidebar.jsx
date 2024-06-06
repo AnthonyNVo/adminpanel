@@ -1,11 +1,26 @@
-import "./sidebar.scss"
-import DashboardIcon from '@mui/icons-material/Dashboard';
+import "./sidebar.scss";
+import DashboardIcon from "@mui/icons-material/Dashboard";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import CreditCardIcon from "@mui/icons-material/CreditCard";
+import StoreIcon from "@mui/icons-material/Store";
+import InsertChartIcon from "@mui/icons-material/InsertChart";
+import SettingsApplicationsIcon from "@mui/icons-material/SettingsApplications";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
+import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
 
 const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="top">
-                <span className="logo"> Pracmin </span>
+                <Link to="/" style={{textDecoration:"none"}}>
+                    <span className="logo"> Pracmin </span>
+                </Link>
             </div>
             <hr />
             <div className="center">
@@ -17,50 +32,54 @@ const Sidebar = () => {
                     </li> 
                     <p className="title">LISTS</p>
                     <li>
-                        <DashboardIcon className="icon"/>
-                        <span>Users</span>
+                        <Link to="/users" style={{textDecoration:"none"}}>
+                            <PersonOutlineIcon className="icon"/>
+                            <span>Users</span>
+                        </Link>
                     </li>
                     <li>
-                    <DashboardIcon className="icon"/>
-                        <span>Products</span>
+                        <Link to="/products" style={{textDecoration:"none"}}>
+                            <StoreIcon className="icon"/>
+                            <span>Products</span>
+                        </Link>
                     </li>
                     <li>
-                    <DashboardIcon className="icon"/>
+                        <CreditCardIcon className="icon"/>
                         <span>Orders</span>
                     </li>
                     <li>
-                    <DashboardIcon className="icon"/>
+                        <LocalShippingIcon className="icon"/>
                         <span>Delivery</span>
                     </li>
                     <p className="title">USEFUL</p>
                     <li>
-                    <DashboardIcon className="icon"/>
+                        <InsertChartIcon className="icon"/>
                         <span>Stats</span>
                     </li>
                     <li>
-                    <DashboardIcon className="icon"/>
+                        <NotificationsNoneIcon className="icon"/>
                         <span>Notifications</span>
                     </li>
                     <p className="title">SERVICE</p>
                     <li>
-                    <DashboardIcon className="icon"/>
+                        <SettingsSystemDaydreamOutlinedIcon className="icon"/>
                         <span>System Health</span>
                     </li>
                     <li>
-                    <DashboardIcon className="icon"/>
+                        <PsychologyOutlinedIcon className="icon"/>
                         <span>Logs</span>
                     </li>
                     <li>
-                    <DashboardIcon className="icon"/>
+                        <SettingsApplicationsIcon className="icon"/>
                         <span>Settings</span>
                     </li>
                     <p className="title">USER</p>
                     <li>
-                    <DashboardIcon className="icon"/>
+                        <AccountCircleOutlinedIcon className="icon"/>
                         <span>Profile</span>
                     </li>
                     <li>
-                    <DashboardIcon className="icon"/>
+                        <ExitToAppIcon className="icon"/>
                         <span>Logout</span>
                     </li>
                 </ul>
